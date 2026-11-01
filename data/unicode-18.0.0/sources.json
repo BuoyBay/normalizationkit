@@ -1,0 +1,25 @@
+{
+  "unicode_version": "18.0.0",
+  "files": [
+    {
+      "file": "UnicodeData.txt",
+      "url": "https://www.unicode.org/Public/18.0.0/ucd/UnicodeData.txt",
+      "sha256": "0736451de439ae7baf1425136617da495e09ee5afbe6e394374db7009ea08950"
+    },
+    {
+      "file": "DerivedNormalizationProps.txt",
+      "url": "https://www.unicode.org/Public/18.0.0/ucd/DerivedNormalizationProps.txt",
+      "sha256": "98ac7f67d985fe781e317f6182e885e94cabb0c314769e6dd73e48b226931ccd"
+    },
+    {
+      "file": "NormalizationTest.txt",
+      "url": "https://www.unicode.org/Public/18.0.0/ucd/NormalizationTest.txt",
+      "sha256": "25a50d816764b04abfb4a646d3eb2b2a803284c3873d9a06757b94fe4513dde3"
+    },
+    {
+      "file": "LICENSE.txt",
+      "url": "https://www.unicode.org/license.txt",
+      "sha256": "e7a93b009565cfce55919a381437ac4db883e9da2126fa28b91d12732bc53d96"
+    }
+  ]
+}
