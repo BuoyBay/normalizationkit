@@ -1,4 +1,4 @@
-# Unicode NFC / NFD / NFKC / NFKD
+# Unicode NFC/NFD/NFKC/NFKD
 
 Portable Unicode 18.0.0 normalization. `Import normalizationkit` exposes
 `NormalizeNFC`, `NormalizeNFD`, `NormalizeNFKC`, `NormalizeNFKD` and
