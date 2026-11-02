@@ -1,6 +1,6 @@
 # Normalize Unicode text to NFC, NFD, NFKC and NFKD
 
-Portable Unicode 18.0.0 normalization for Buoy. `Import normalizationkit` exposes
+Portable Unicode 18.0.0 normalization. `Import normalizationkit` exposes
 `NormalizeNFC`, `NormalizeNFD`, `NormalizeNFKC`, `NormalizeNFKD` and
 `NormalizationUnicodeVersion()`. Copy `packages/normalizationkit-0.1.0.buipkg`
 into a consumer's packages directory. No native libraries or other packages are required.
@@ -51,8 +51,6 @@ On your own machine, install Buoy and run:
 ```sh
 buoy ai init --both
 ```
-
-The generated agent files and editor settings stay local and are ignored by Git.
 
 ## Contributing
 

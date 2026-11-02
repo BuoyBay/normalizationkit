@@ -18,18 +18,14 @@ Pinned inputs under `data/unicode-18.0.0` come from the official
 - NormalizationTest.txt supplies the version-matched test relationships.
 - LICENSE.txt contains the Unicode License V3 notice accompanying the data.
 
-`sources.json` records download URLs and SHA-256 hashes. The generator and verifier
-check these hashes before using the inputs. `tools/generate_normalization_tables.py`
-produces deterministic little-endian lookup tables stored as Base64 in the Buoy
-module; it does not derive mappings from Python's installed Unicode version.
-The Unicode license is also included under package resources so sealed consumers
-receive the attribution. Unicode 18 is an explicit supported version, not a claim
-that this package tracks the newest Unicode release automatically.
+`sources.json` records download URLs and SHA-256 hashes. Deterministic
+little-endian lookup tables are stored as Base64 in the Buoy module. They derive
+from the pinned Unicode 18 data, independently of Python's installed Unicode
+version. Unicode 18 is an explicit supported version rather than an automatic
+tracking policy. The Unicode license is retained under package resources.
 
-The previous `data/unicode-17.0.0` inputs remain pinned for compatibility tests.
-The verifier checks both versions' source hashes and normalization vectors;
-only Unicode 18 data generates the runtime tables. New regression cases cover
-Unicode 18 Armenian compatibility mappings and Hebrew combining-mark ordering.
+The earlier Unicode 17 inputs remain pinned alongside the Unicode 18 data.
+Only Unicode 18 data supplies the runtime tables.
 
 The runtime uses no platform normalization APIs and has no mutable normalization
 cache. Its private shared buffers hold generated tables and are only read after

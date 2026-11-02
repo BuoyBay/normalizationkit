@@ -49,19 +49,6 @@ Strings; byte decoding and its validation remain the caller's responsibility.
 /usr/bin/buoy pkg seal . -o packages/normalizationkit-0.1.0.buipkg
 ```
 
-The verifier checks source hashes and reproducible tables, seals a fresh package,
-checks the module and consumer on six desktop targets, and executes every
-relationship from every row of Unicode 18's NormalizationTest.txt and retains
-Unicode 17's vectors as a compatibility check. It also checks
-1,000 deterministic random sequences against Python's normalizer over a repertoire
-supported by that normalizer, plus size limits, a long combining-mark run,
-supplementary text, compatibility distinctions, exclusions and Hangul. Execution
-is tested on the current Linux host; macOS and Windows are compiler checks.
-The vector suite does not exhaustively test every unlisted Unicode scalar.
-
-`BUOY` selects the compiler and `BPM_PACKAGER` the sealing command. Source data is
-checked in for offline reproduction; ordinary builds and tests need no download.
+Pinned source data is provided for offline reproduction.
 See [provenance](../PROVENANCE.md) and the bundled
 [Unicode license](../resources/unicode-LICENSE.txt).
-
-Test suites and fixtures are maintainer-local and are not part of this public repository.
