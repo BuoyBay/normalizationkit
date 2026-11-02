@@ -1,1 +1,1 @@
-{"schema":1,"name":"normalizationkit","version":"0.1.0","description":"Normalize Unicode text to NFC, NFD, NFKC and NFKD"}
+{"schema":1,"name":"normalizationkit","version":"0.1.0","description":"Unicode NFC / NFD / NFKC / NFKD"}
